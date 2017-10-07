@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg">
+
+    <SurfaceView
+        android:id="@+id/sf_VideoMonitor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="58px" />
+
+    <TextView
+        android:id="@+id/tv_Loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58px"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100px"
+        android:gravity="center"
+        android:onClick="SetOnclick"
+        android:paddingLeft="12px"
+        android:paddingRight="12px"
+        android:text="设置预置点"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/CAMlinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="165dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_Up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_Left"
+            android:background="@mipmap/camera_move_up" />
+
+        <Button
+            android:id="@+id/btn_Down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_Left"
+            android:layout_below="@+id/btn_Left"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/camera_move_down" />
+
+        <Button
+            android:id="@+id/btn_Left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_Up"
+            android:background="@mipmap/camera_move_left" />
+
+        <Button
+            android:id="@+id/btn_Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_Up"
+            android:layout_below="@id/btn_Up"
+            android:background="@mipmap/camera_move_right" />
+
+        <Button
+            android:id="@+id/btn_ZoomIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/camera_move_bigger" />
+
+        <Button
+            android:id="@+id/btn_ZoomOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/camera_move_smaller" />
+    </RelativeLayout>
+</RelativeLayout>
