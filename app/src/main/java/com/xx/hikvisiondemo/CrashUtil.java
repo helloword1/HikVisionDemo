@@ -1,13 +1,4 @@
-/**
- * Title: CrashUtil.java
- * Package: com.hikvision.ivms4510hd.utils
- * Copyright: Hikvision Digital Technology Co., Ltd. All Right Reserved.
- * Address: http://www.hikvision.com
- * Description: 本内容仅限于杭州海康威视数字技术股份有限公司内部使用，禁止转发。
- * Author: chenhao17
- * Date: 2016-5-06-006
- * Version: 1.0
- */
+
 package com.xx.hikvisiondemo;
 
 import android.content.Context;
